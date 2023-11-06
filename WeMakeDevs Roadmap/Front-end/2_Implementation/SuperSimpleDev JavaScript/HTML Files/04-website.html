@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CSS Review</title>
+    <style>
+        .red-button {
+            background-color: red;
+            color: white;
+            border: none;
+        }
+
+        .yellow-button {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <button title="Red-button" class="red-button" onclick="
+        alert('You pressed the red-button!')"> <!-- Example of Inline JavaScript -->
+        hello
+    </button>
+    <p>paragraph of <button class="yellow-button">hello</button>text</p>
+
+    <!-- Script tags (containing javascript code) are usually situated at the end of the body -->
+    <!-- Example of Internal JavaScript -->
+    <script>
+        // JavaScript Comments, works only inside script tag or JS attributes (like onclick) and JS external files
+        // alert('Hello');
+        /*
+            Multi-line Comment
+            Can contain multiple lines of comment
+        */
+        console.log(2 + 2); // result is displayed in console of web-page
+        console.log('some' + 'text');
+    </script>
+</body>
+</html>

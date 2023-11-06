@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <script>
+        // Names for functions follow the same rules as variable names
+        /* function func1 () {
+            console.log('Hello');
+            console.log(2 + 2);
+        }
+        func1(); */
+
+        // Paramertes & Arguments:
+        // Names for parameters follow the same rules as variable names
+        function calculateTenPercentTax(amount){ // amount is a parameter
+            console.log(amount * 0.1);
+        }
+        calculateTenPercentTax(3000); // 3000 is argument
+        calculateTenPercentTax(5000);
+        // Parameters can be given a default value which gets used when no argument is given for that parameter
+        function calculateTax(amount, taxPercent = 0.1){ 
+            console.log(amount * taxPercent);
+        }
+        calculateTax(5000, 0.2);
+        calculateTax(5000);
+    </script>
+</body>
+</html>

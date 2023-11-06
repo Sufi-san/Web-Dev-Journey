@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Projects</title>
+</head>
+<body style="margin-bottom: 200px;">
+    <p>YouTube Subscribe Button</p>
+    <button class="js-subscribe-btn" onclick="changeButtonText();">Subscribe</button><br><br><br>
+    <p>Rock Paper Scissors</p>
+    <a href="/09-RPSwithDOM.html" target="_blank">Click here</a><br><br><br>
+    <p>Amazon Shipping Calculator</p>
+    <p>Orders under $40 = +$10 shipping.</p>
+    <p>Orders over $40 = FREE shipping</p>
+    <input id="js-order-cost" type="text" placeholder="Cost of order" onkeydown="findCostOnEnter(event);">
+    <button onclick="findFinalCost();">Calculate</button>
+    <p class="js-final-cost"></p>
+    <!--
+        We can use the in-built object 'event' to check what event occured
+        Event Listeners:
+        onclick = click
+        onkeydown = key press
+        onscroll = scrolling
+        onmouseenter = hovering
+        onmouseleave = hovering stops
+        ...
+    -->
+    <script>
+        let buttonTextChanged = false;
+        function changeButtonText() {
+            // We can also use 'innerText' property to get text and check it without spaces
+            if(buttonTextChanged){
+                buttonTextChanged = false;
+                document.querySelector('.js-subscribe-btn').innerHTML = "Subscribe";
+                return;
+            }
+            buttonTextChanged = true;
+            document.querySelector('.js-subscribe-btn').innerHTML = "Subscribed";
+        }
+        function findCostOnEnter(event) {
+            if(event.key === 'Enter'){
+                findFinalCost();
+            }
+        }
+        function findFinalCost() {
+            // Number() is an in-built function in JS that returns a converted numerical value for appropriate String
+            // If we use .parseFloat() or .parseInt() if the String just starts with a number, no matter the rest of the String, that number will get parsed
+            // But, in case of Number() nothing will be converted to Number if the String does not contain proper numerical value
+            // String() function also exists that does the opposite of this, it does number to String conversion
+            let orderCost = Number(document.getElementById('js-order-cost').value);
+            if(orderCost < 40){
+                orderCost += 10;
+            }
+            document.querySelector('.js-final-cost').innerHTML = `$${orderCost}`;
+        }
+        // Window Objects also exist, they represent the whole browser window
+        // Built-in objects like, document and console are part of the window objects however, JS automatically adds it for us eliminating the need to type
+        window.console.log(window.document);
+    </script>
+</body>
+</html>

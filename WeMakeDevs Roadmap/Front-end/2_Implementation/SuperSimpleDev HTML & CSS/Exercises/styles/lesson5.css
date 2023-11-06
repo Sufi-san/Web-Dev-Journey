@@ -1,0 +1,178 @@
+p {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.tahoma {
+    font-family: tahoma;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 2px;
+    margin-bottom: 8px;
+}
+
+.deal-text {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+
+.deal-end {
+    font-family: Arial;
+    font-size: 16px;
+    color: red;
+    margin-bottom: 8px;
+    font-style: italic;
+}
+
+.course-title {
+    font-family: Verdana;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.course-level {
+    font-family: Verdana;
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 14px;
+}
+
+.course-description {
+    font-family: Verdana;
+    font-size: 12px;
+    margin-bottom: 12px;
+    width: 210px;
+}
+
+.start-button {
+    background-color: rgb(7, 110, 7);
+    color: white;
+    font-family: Verdana;
+    border-color: rgb(7, 110, 7);
+    border-width: 1px;
+    border-radius: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-bottom: 4px;
+}
+
+.apple-title {
+    font-family: Arial;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 4px;
+    margin-bottom: 14px;
+}
+
+.apple-text {
+    font-family: Arial;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.learn-more {
+    font-family: Arial;
+    text-align: center;
+    color: rgb(44, 44, 226);
+    margin-bottom: 14px;
+}
+
+.all-Arial {
+    font-family: Arial;
+}
+
+.all-center {
+    text-align: center;
+}
+
+.new-text {
+    color: rgb(207, 24, 24);
+    font-size: 12px;
+    margin-bottom: 8px;
+} 
+
+.macbook {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 8px;
+} 
+
+.for-whom {
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 8px;
+} 
+
+.price-text {
+    margin-bottom: 8px;
+}
+
+.buy-button {
+    font-weight: bold;
+    background-color: rgb(27, 72, 197);
+    color: white;
+    border-color: rgb(27, 72, 197);
+    border-width: 1px;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 16px;
+    margin-bottom: 2px;
+}
+
+.amount {
+    font-size: 22px;
+    margin-bottom: 8px;
+} 
+
+.currency {
+    font-size: 13px;
+    margin-left: 4px;
+    color: rgb(107, 107, 107);
+}
+
+.details{
+    color: rgb(5, 116, 5);
+    font-size: 14px;
+    margin-bottom: 8px;
+} 
+
+.more-details {
+    color: rgb(107, 107, 107);
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.reduction {
+    color: rgb(207, 24, 24);
+}
+
+.site-name{
+    font-weight: bold;
+    margin-bottom: 8px;
+} 
+
+.side-text {
+    font-weight: normal;
+    color: rgb(107, 107, 107);
+} 
+
+.advice {
+    margin-bottom: 14px;
+    width: 560px;
+} 
+
+.reference {
+    margin-bottom: 8px;
+}
+
+.reference-id {
+    color: rgb(46, 182, 236);
+}

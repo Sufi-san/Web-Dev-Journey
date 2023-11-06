@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+</head>
+<body>
+    <button>hello</button>
+    <button class="js-btn">Second Button</button>
+    <script>
+        // document is also an in-built object
+        // It represents/models the web-page. 
+        // Thus, the name, Document Object Model (DOM)
+        /*
+        document.body.innerHTML = 'Hello'
+        document.title = 'Changed Title';
+        */
+
+        /*
+        console.log(document.title);
+        console.log(document.body);
+        console.log(typeof document.body);
+
+        console.log(document.body.innerHTML);
+        document.body.innerHTML = "<button>Good job!</button>";
+        */
+
+        // Important method of document object:
+        // .querySelector() selects element from HTML and puts it inside our javascript
+        console.log(document.querySelector('button').innerHTML) // accesses button tag and also the HTML inside the button tag
+        console.log(document.querySelector('button').innerHTML = 'Changed');
+        // We can use class/id attribute in HTML to target specific tags
+        // It is a common practice to use class names starting with 'js-' if those tags are being used in JS
+        document.querySelector('.js-btn').innerHTML = 'Changed Btn text';
+        // As these are all objects we can save them inside variables
+        const buttonElement = document.querySelector('.js-btn');
+        console.log(buttonElement);
+        // Thus, DOM combines JS and HTML. It provides full control of web-page to JS
+    </script>
+</body>
+</html>

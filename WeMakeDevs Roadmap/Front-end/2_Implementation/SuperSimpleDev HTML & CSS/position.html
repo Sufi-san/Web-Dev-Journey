@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Position Practice</title>
+    </head>
+    <body style="height: 3000px; padding-top: 60px; padding-left: 96px">
+        <!-- All elements have default position as 'position: static' -->
+        <!-- The position attribute of elements can be modified to change their behavior 
+             Elements with 'position: fixed' do not occupy extra space on the web-page 
+             They also have a fixed position and scrolling does not affect their position 
+             We can define pixel measurements of top, bottom, left, right for these elements
+             which tells the distance between the element and the browser window's edges
+             Based on these distances the element can also stretch between the four edges
+             Upon changing the size of the browser window, these elements behave like a
+             flexbox flexing both vertical and horizontal direction to maintain their
+             distance from edges
+             In addition to these properties we can also use height or width to resize
+             the element.
+        -->
+        <!-- Position: Absolute & Relative -->
+        <!-- Position Absolute has all the properties like top, left, right & bottom however,
+             unlike position fixed elements which are placed in the browser window, position 
+             absolute elements are placed on the page.
+             Absolute elements, move when page is scrolled while fixed ones do not.
+             Position absolute is used to place elements on precise locations on our page. 
+             Generally, elements which are written below in the HTML document appears in front
+             of elements written above it. This can be overridden by using property 'z-index'
+             'z-index' is by default zero, elements with higher 'z-index' appear in front of 
+             elements with lower z-index
+             When placed inside another element, the nested element with position absolute is
+             actually 'relative' to the out element and not the webpage. However, only outer 
+             elements that have position 'fixed' are able to contain elements with position 
+             'absolute'.
+             To make position 'static' elements have a relative nested element we use the 
+             property, position 'relative'. This property is used in the style of the element
+             that needs to 'contain' another relative element, while the 'contained' element 
+             will still be position 'absolute'-->
+        <div style="
+            background-color: black;
+            color: white;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            height: 50px;
+            z-index: 100;
+        ">header</div>
+        <div style="
+            background-color: green;
+            color: white;
+            position: fixed;
+            top: 50px;
+            left: 0px;
+            bottom: 0px;
+            width: 72px;
+        ">
+        sidebar
+        <div style="
+            position: absolute;
+            background-color: red;
+            color: white;
+            right: 10px;
+            top: 60px;
+        ">
+            absolute
+        </div>
+        </div>
+        <div style="
+            position: absolute;
+            background-color: red;
+            color: white;
+            right: 10px;
+            top: 60px;
+        ">
+            absolute
+        </div>
+        <div style="
+            background-color: lightblue;   
+            height: 200px;
+            width: 200px;
+        ">div1</div>
+        <div style="
+            background-color: lightpink;   
+            height: 200px;
+            width: 200px;
+            position: relative;
+        ">
+            div2
+            <div style="
+                position: absolute;
+                background-color: black;
+                color: white;
+                right: 10px;
+                bottom: 10px;
+            ">
+                5:00
+        </div>
+        </div>
+    </body>
+</html>

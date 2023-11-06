@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> HTML & CSS Cheatsheets</title>
+	</head>
+	<body style="text-align: center; padding-top: 300px">
+		<h3><a style="display: block" target="_blank" href="https://www.codewithharry.com/blogpost/html-cheatsheet/">HTML Cheatsheet</a></h3>
+		<h3><a target="_blank" href="https://www.codewithharry.com/blogpost/css-cheatsheet/">CSS Cheatsheet</a></h3>
+	</body>
+</html>

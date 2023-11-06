@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 10 Exercise 10h</title>
+    <link rel="stylesheet" href="CSS Files/Lesson10Exercises.css">
+</head>
+<body>
+    <div class="amazon-section">
+        <p>Amazon Shipping Calculator</p>
+        <p>Orders under $40 = +$10 shipping.</p>
+        <p>Orders over $40 = FREE shipping.</p>
+        <input class="js-order-cost" type="text" placeholder="Cost of order" onkeydown="showCostOnEnter(event);">
+        <button onclick="showCost();">Calculate</button>
+        <p class="js-final-cost"></p>
+    </div>
+    <script src="JS Files/Lesson10Exercise10h.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 6 Exercises</title>
+</head>
+<body>
+    <script>
+        // 6a, 6b, 6c:
+        const name = 'Sufiyan', hour = Math.floor(Math.random() * 24 + 1);
+        if(hour >= 6 && hour <= 12){
+            console.log('Good Morning Sufiyan!');
+        }
+        else if(hour >= 13 && hour <= 17){
+            console.log('Good Afternoon Sufiyan!');
+        }
+        else {
+            console.log('Good Night Sufiyan!');
+        }
+
+        // 6d, 6e:
+        const age = Math.floor(Math.random() * 100 + 1), isHoliday = Math.random() < 1 / 2;
+        if(isHoliday && (age <= 6 || age >= 65)){
+            console.log('Discount');
+        }
+        else {
+            console.log('No Discount');
+        }
+
+        // 6f, 6g, 6h, 6i, 6j:
+        const randNum = Math.random(), myGuess = 'heads';
+        let result = '';
+        result = randNum < 0.5? 'heads': 'tails';
+        console.log(result);
+        myGuess == result? console.log('You Win!'): console.log('You Lose!');
+        
+        // 6k, 6l: (Done in CartQuantity.html);
+    </script>
+</body>
+</html>

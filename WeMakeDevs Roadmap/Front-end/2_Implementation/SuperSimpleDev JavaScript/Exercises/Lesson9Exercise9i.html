@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 9 Exercises 9i</title>
+</head>
+
+<body>
+    <p style="font-weight: bold;">Cart Quantity</p>
+    <button onclick="
+    showQuantity();
+    ">
+        Show Quantity
+    </button>
+    <button onclick="
+    updateCartQuantity(1);">
+        Add to Cart
+    </button>
+    <button onclick="
+    updateCartQuantity(-1);">
+        Remove from Cart
+    </button>
+    <button onclick="
+    updateCartQuantity(2);">
+        +2
+    </button>
+    <button onclick="
+    updateCartQuantity(-2);">
+        -2
+    </button>
+    <button onclick="
+    updateCartQuantity(3);">
+        +3
+    </button>
+    <button onclick="
+    updateCartQuantity(-3);">
+        -3
+    </button>
+    <button onclick="
+    updateCartQuantity(4);">
+        +4
+    </button>
+    <button onclick="
+    updateCartQuantity(5);">
+        +5
+    </button>
+    <button onclick="
+    cartQuantity = 0;
+    showQuantity()">
+        Reset Cart
+    </button>
+    <p class="js-cart-quantity"></p>
+    <script>
+        let cartQuantity = 0, cartLimit = 10;
+        showQuantity();
+        function updateCartQuantity(updateValue) {
+            if (cartQuantity + updateValue > cartLimit) {
+                alert('The cart is full!');
+                return;
+            }
+            if (cartQuantity + updateValue < 0){
+                alert('Not enough items in cart!')
+                return;
+            }
+            cartQuantity += updateValue;
+            showQuantity();
+        }
+        function showQuantity() {
+            document.querySelector('.js-cart-quantity').innerHTML = `Cart Quantity: ${cartQuantity}`;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+.cat-image {
+    width: 200px;
+    border-radius: 16px;
+}
+
+.cat-image2 {
+    object-fit: cover;
+    height: 135px;
+    width: 150px;
+    object-position: center;
+}
+
+.cat-image3 {
+    height: 140px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 70px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.search-bar {
+    border-radius: 6px;
+    font-family: Arial;
+    font-size: 14px;
+    padding-left: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.search-bar2 {
+    border: none;
+    font-family: Arial;
+    font-size: 14px;
+    border-radius: 20px;
+    padding-left: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 400px;
+    box-shadow: 0px 0px 6px rgb(170, 170, 170);
+}
+
+p {
+    font-size: 14px;
+    font-family: Arial;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: rgb(62, 62, 62);
+}
+
+.initial-text {
+    margin-bottom: 4px;
+}
+
+.mail-entrybox {
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2px;
+    width: 345px;
+    margin-bottom: 16px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.agree-text {
+    margin-bottom: 16px;
+}
+
+.agree-button {
+    font-family: Roboto;
+    font-size: 18px;
+    background-color: rgb(10, 102, 194);
+    color: white;
+    padding-left: 124px;
+    padding-right: 124px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(10, 102, 194);
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.cat-image4 {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    vertical-align: middle;
+}
+
+.img-text {
+    margin-left: 8px;
+    margin-right: 138px;
+}
+
+.tweet-button {
+    background-color: rgb(29, 155, 240);
+    border-color: rgb(29, 155, 240);
+    border-style: solid;
+    font-weight: bold;
+    border-radius: 18px;
+    padding-left: 14px;
+    padding-top: 6px;
+    padding-right: 14px;
+    padding-bottom: 6px;
+    color: white;
+    cursor: pointer;
+}

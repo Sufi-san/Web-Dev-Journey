@@ -1,0 +1,42 @@
+List of Contents:
+	1. What does a Front-end Developer do?
+	2. What is Front-end Development?
+	3. Technologies/Tools/Languages used by Front-end Web Developers
+	4. Run-time Environments
+	5. Development Goals
+	6. Other Skills
+
+What does a Front-end Developer do? 
+-> Design the UI/UX of a web application ensuring that it is efficient, user-friendly and aesthetically pleasing. (Front-End Web Developer)
+   The term can also be used to describe a person who develops interactive GUI for mobile & desktop interfaces.
+   
+What is Front-end Development?
+-> The type of development done by a Front-end Developer (as mentioned above)
+
+Technologies/Tools/Languages used by Front-end Web Developers:
+-> 1. HTML (Declare the Structure & Layout)
+   2. CSS (Design and format structure,text ,images, layout and other web elements)
+   3. JavaScript (A programming language to add functionality to the website)
+   4. Frameworks (React, Angular, Vue.js to simplify the Front-end Dev process)
+   
+Using HTML, CSS & JavaScript a developer can develop web applications for various run-time environments which include:
+-> 1. Web Browser (most common software for working with information on WWW) (e.g: Chrome, Firefox, Safari, Microsoft Edge)
+   2. Headless Browser (web browsers which have no GUI, used for scraping, unit-testing etc.)(web browsers working from command line for automation)
+      (e.g: Headless Chromium, Zombie)
+   3. Web Views (frames or single tabs, implemented by the native OS to view webpages in different environments) (e.g: Electron, Tauri.js)
+   4. Native from WebTech 
+      (creating/crafting code, for non-browser applications(android/iOS) using web-browser development)
+      (an initiative for using web technologies to create applications for environments without web-engines) 
+      (e.g: React Native, Flutter)
+   
+Goals to keep in mind during Development:
+-> 1. Accessibility (make the website using responsive web desing such that it is easily accessible on different devices Laptops, Tablets, Smartphones)
+   2. Performance (manipulating HTML, CSS, JavaScript to improve user-interaction and operation speeds)
+   3. Speedy Development (make use of techniques to shorten the development duration and provide quick & accurate results)
+   
+Other Skills to learn:
+-> 1. Testing/Debugging
+   2. Version Control System (Git/GitHub)
+   3. Problem Solving (DSA/Real Projects)
+   4. Staying up-to-date (always learn about new technologies that might affect/improve development process in anyway)
+   5. Communication (know the requirement accurately by communicating well with the employer/user)

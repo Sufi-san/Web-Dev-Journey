@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS Complete</title>
+    <link rel="stylesheet" href="../CSS Files/styles_10-RPS.css"> <!-- Using External CSS -->
+    <!-- (..) leads to previous folder that contains the current directory -->
+</head>
+
+<body>
+    <p class="game-title">Rock Paper Scissors</p>
+    <button class="game-button" onclick="playRPS('Rock');">
+        <img src="https://supersimple.dev/projects/rock-paper-scissors/images/rock-emoji.png" alt="Rock.jpg">
+    </button>
+    <button class="game-button" onclick="playRPS('Paper');">
+        <img src="https://supersimple.dev/projects/rock-paper-scissors/images/paper-emoji.png" alt="Paper.jpg">
+    </button>
+    <button class="game-button" onclick="playRPS('Scissors');">
+        <img src="https://supersimple.dev/projects/rock-paper-scissors/images/scissors-emoji.png" alt="Scissors.jpg">
+    </button>
+    <div class="js-result-message"></div>
+    <p class="js-score scoreboard-txt"></p>
+    <button onclick="scoreReset();" class="reset-btn">Reset Score</button>
+    <script src="../JS Files/10-RPS_Complete.js"></script> <!-- Using External JS -->
+    <!-- We can use multiple JS files in a single document using the above method -->
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <script>
+        /*// Object creation
+        const product = {
+            name: 'socks',
+            price: 1090
+        };
+
+        // Accessing Object property values
+        console.log(product);
+        console.log(product.name);
+        console.log(product.price);
+
+        // Assigning new value to existing properties
+        product.name = 'cotton socks';
+        console.log(product);
+
+        // Adding new properties to Objects
+        product.newProperty = true;
+        console.log(product); */
+        
+        /*// Object properties can be accessed using bracket notation
+        // Kind of like an array that uses property names as indices
+        const product2 = {
+            name: 'shirt',
+            ['object-type']: 'product',
+            // 'object-type': 'product' will also work. (when there is only string between brackets)
+            // Now we see object inside object:
+            rating: {
+                starts: 4.5,
+                count: 87
+            },
+            // Functions inside object:(pre ES6 Style)
+            func1: function func1() {
+                console.log('function inside object');
+            }
+        }
+        console.log(product2.name);
+        console.log(product2['name']);
+        // This is useful for uncommon property names
+        // Example: console.log(product2.delivery-time);  will return an error, as JS thinks we are performing 'minus' operation
+        product2['delivery-time'] = '1 Day';
+        console.log(product2['delivery-time']);
+        console.log(product2['object-type']);
+        console.log(product2.rating.count);
+        product2.func1();
+        console.log(typeof console.log);*/
+
+        // console and Math are built-in objects
+
+        // More built-in objects:
+        /* JSON: (JS Object Notation)
+            - A syntax
+            - has less features
+            - all properties and strings must use double quotes ("")
+            - does not support functions
+            - JSON syntax is more universal! (can be understood by many programming languages and not just JS)
+            - Use Cases:
+                i) sending data between computers
+                ii) data storage
+        */
+
+        /*// Built-in JSON Object: helps convert JS Object to JSON and vice versa
+        console.log(JSON.stringify(product2));
+        console.log(typeof JSON.stringify(product2));
+        
+        const jsonObj = JSON.stringify(product2);
+        console.log(JSON.parse(jsonObj));*/
+
+        /* When a page is reloaded or closed, the variables inside are reset(values get deleted), to avoid it we can use the local storage to save the values and start from those values as initial values when page is re-opened.
+        To do this we can use another built-in JS object called localStorage.
+        (Demonstration in RPSwithObject.html)*/
+
+        /* 
+            null vs undefined
+                - when defined as 'null' it often means that we intentionally want it to be 'null'
+                - they work the same in most cases
+        */
+
+        // Auto-boxing: JS automatically wraps literals into a special object first which then allows usage of properties and methods
+        // Works with Strings, numbers, boolean
+        // Does not work for null & undefined
+        console.log('hello'.length);
+        console.log('hello'.toUpperCase());
+
+        // The variables we create as objects are reference variables that refer to the actual object created somewhere inside the computer's memory
+        const object1 = {
+            message: 'hello'
+        };
+        const object2 = object1; // both variables refer to the same object in memory
+        console.log(object2);
+        object2.message = 'Good Job!';
+        console.log(object1);
+
+        // Object Comparison:
+        const object3 = {
+            message: 'Good Job!'
+        }
+        console.log(object3 === object1); // Though their content is same, they contain different references 
+        console.log(object2 === object1); // These have the same reference
+
+        // Object Shortcuts:
+        const object4 = {
+            message: 'Good Job!',
+            price: 799,
+            type: true
+        }
+        // Note: object have scopes too
+        // const message = object4.message; // normal way to assing object values to variables
+        // Destructuring Shortcut:
+        const {message, price, type} = object4; // variables in brackets should be same as property names in object
+        console.log(message);
+        console.log(price);
+        console.log(type);
+
+        // Shorthand Shortuct:
+        // For variables already defined in the code we can use the following shortcut if want to copy them for object
+        const object5 = {
+            // message: message
+            message,
+            price,
+            /*method: function func1() {
+                console.log('Hello Function');
+            }*/
+            // Short-hand method from ES6:
+            method() {
+                console.log('Hello Function');
+            }
+        }
+        console.log(object5);
+        object5.method();
+    </script>
+</body>
+</html>

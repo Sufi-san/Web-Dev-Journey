@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- VS Code has a nice feature called color picker -->
+        <!-- Every color can be created with a combination of red green and blue (RGB) min: 0 and max: 255 -->
+        <!-- All zeros in rgb give us black and all 255 give us white-->
+        <!-- . (dot) targets 'class' while # (hash) targets 'id'-->
+        <title>Button Styling</title>
+        <style>
+            .subscribe-button {
+                background-color: rgb(204, 0, 0);  
+                color: white;
+                border: none;
+                border-radius: 2px;
+                padding-left: 16px;
+                padding-top: 10px;
+                padding-right: 16px;
+                padding-bottom: 10px;
+                cursor: pointer;
+                margin-right: 5px;
+                transition: opacity 0.15s;
+                vertical-align: top;
+            }
+        
+            .subscribe-button:hover {
+                opacity: 0.8;
+            }
+        
+            .subscribe-button:active {
+                opacity: 0.5;
+            }
+        
+            .join-button { 
+                background-color: white;
+                color: rgb(6, 95, 212);
+                border-radius: 2px;
+                border-color: rgb(6, 95, 212);
+                border-width: 1px;
+                border-style: solid;
+                padding-left: 15px;
+                padding-top: 9px;
+                padding-right: 15px;
+                padding-bottom: 9px;
+                cursor: pointer;
+                margin-right: 5px;
+                transition: background-color 0.26s,
+                  color 0.26s;
+                  vertical-align: top;
+            }
+        
+            .join-button:hover {
+                background-color: rgb(6, 95, 212);
+                color: white;
+            }
+        
+            .join-button:active {
+                opacity: 0.7;
+            }
+        
+            .tweet-button{
+                background-color: rgb(29, 155, 240);
+                border-color: rgb(29, 155, 240);
+                border-style: solid;
+                font-weight: bold;
+                border-radius: 18px;
+                padding-left: 16px;
+                padding-top: 7px;
+                padding-right: 16px;
+                padding-bottom: 7px;
+                color: white;
+                cursor: pointer;
+                transition: box-shadow 0.15s;
+                vertical-align: top;
+            }
+        
+            .tweet-button:hover {
+                box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.2);
+            }
+        
+            .tweet-button:active{
+                opacity: 0.6;
+            }
+        
+        </style>
+        <!-- Trick for border-radius is to take half of the final height -->
+        <!-- This method of adding CSS for an HTML file is known as 'Internal' and this CSS is called 'Internal CSS'-->
+        <!-- It is very difficult to understand, manipulate and remember all CSS properties, so use Google -->
+        <!-- We replace height and width with padding in CSS -->
+        <!-- Generally elements are aligned with respect to the text, browser tries to keep all the text in one line
+            vertical-align property helps us align a particular object with respect to the frame-->
+    </head>
+    <body>
+        <button class="subscribe-button"> <!-- 'class' attribute, assigned to style only this button-->
+            SUBSCRIBE
+        </button >
+        <button class="join-button">
+            JOIN
+        </button>
+        <button class="tweet-button">
+            Tweet
+        </button>
+    </body>
+</html>
+

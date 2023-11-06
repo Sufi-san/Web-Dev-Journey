@@ -1,0 +1,227 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    justify-content: space-between;
+    height: 56px;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(220, 220, 220); 
+    z-index: 1;
+}
+
+.start-section {
+    display: flex;
+    align-items: center
+}
+
+.middle-section {
+    display: flex;
+    flex: 1;
+    max-width: 470px;
+    margin-left: 60px;
+    align-items: center;
+}
+
+.end-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 182px;
+    margin-right: 24px;
+    margin-left: 29px;
+    flex-shrink: 0;
+}
+
+.hamburger-menu, .youtube-logo {
+    margin-left: 24px;
+}
+
+.hamburger-menu {
+    height: 24px;
+}
+
+.youtube-logo {
+    height: 20px;
+}
+
+.search-bar, .search-button {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(200, 200, 200);
+}
+
+.search-bar {
+    flex: 1;
+    height: 35px;
+    padding-left: 12px;
+    padding-top: 2px;
+    border-radius: 2px;
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.08);
+    font-size: 16px;
+    width: 0;
+}
+
+.search-bar::placeholder {
+    font-family: Roboto, Arial;
+    font-size: 16px;
+    color: rgb(150, 150, 150);
+}
+
+.search-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 40px;
+    width: 65px;
+    padding-left: 6px;
+    padding-right: 6px;
+    background-color: rgb(248, 248, 248);
+    margin-left: -1px;
+    margin-right: 8px;
+}
+
+.search-button:hover {
+    background-color: rgb(238, 238, 238);
+}
+
+.search-button .tooltip {
+    position: absolute;
+    font-family: Roboto, sans-serif;
+    bottom: -50px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 2px;
+    color: white;
+    background-color: rgba(96, 96, 96, 0.9);
+    font-size: 12px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip {
+    opacity: 1;
+}
+
+.voice-search-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 20px;
+    padding-top: 2px;
+    padding-bottom: 3px;
+    padding-right: 8px;
+    padding-left: 8px;
+    background-color: rgb(248, 248, 248);
+}
+
+.voice-search-button .tooltip {
+    position: absolute;
+    font-family: Roboto, sans-serif;
+    bottom: -42px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 2px;
+    color: white;
+    background-color: rgba(96, 96, 96, 0.9);
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+}
+
+.search-icon, .mic-icon, .upload-icon, .yt-apps-icon {
+    height: 24px;
+}
+
+.notifications-icon, .upload-icon, .yt-apps-icon {
+    vertical-align: middle;
+}
+
+.notification-div {
+    position: relative
+}
+
+.notifications-count {
+    background-color: rgb(200, 0, 0);
+    color: white;
+    position: absolute;
+    top: -3px;
+    right: -7px;
+    font-family: Roboto, Arial;
+    font-size: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+}
+
+.notifications-icon {
+    height: 24px;
+}
+
+.end-section .tooltip-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.end-section .tooltip-container .tooltip {
+    pointer-events: none;
+    position: absolute;
+    font-family: Roboto, sans-serif;
+    white-space: nowrap;
+    bottom: -50px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 2px;
+    color: white;
+    background-color: rgba(96, 96, 96, 0.9);
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.15s;
+}
+
+.end-section .tooltip-container:hover .tooltip {
+    opacity: 1;
+}
+
+.current-user-pic {
+    height: 32px;
+    border-radius: 16px;
+}
+
+.hamburger-menu,
+.current-user-pic,
+.notifications-icon,
+.notifications-count,
+.upload-icon,
+.yt-apps-icon, 
+.search-button,
+.voice-search-button {
+    cursor: pointer;
+}

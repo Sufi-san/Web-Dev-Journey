@@ -1,0 +1,39 @@
+body {
+    background-color: black;
+    color: white;
+    padding: 0;
+}
+
+.ans-field {
+    font-size: 45px;
+    font-family: Arial;
+    margin: 16px 0px;
+}
+
+.button-class1, .button-class3 {
+    background-color: rgb(50, 50, 50);
+}
+
+.button-class2 {
+    background-color: rgb(252, 164, 1);
+}
+
+.button-class3 {
+    font-size: 17px;
+}
+
+button {
+    height: 60px;
+    width: 60px;
+    border: none;
+    border-radius: 62px;
+    margin-right: 5px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    font-size: 26px;
+}
+
+div {
+    margin-bottom: 16px;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <p>Rock Paper Scissors</p>
+    <button onclick="
+    // Math.random() generates a floating point number which is, >= 0 and always < 1. (never equal to 1)
+    randomNum = Math.random();
+    
+    if(randomNum >= 0 && randomNum < 1 / 3){
+        compPick = 'rock';
+    }
+    else if(randomNum >= 1 / 3 && randomNum < 2 / 3){
+        compPick = 'paper';
+    }
+    else{
+        compPick = 'scissors';
+    }
+
+    if(compPick == 'paper'){
+        result = 'You Lose!'
+    }
+    else if(compPick == 'scissors'){
+        result = 'You Win!'
+    }
+    else {
+        result = 'Tie!'
+    }
+    alert(`You picked rock. Computer picked ${compPick}. ${result}`);">
+        rock
+    </button>
+    <button onclick="
+    randomNum = Math.random();
+    
+    if(randomNum >= 0 && randomNum < 1 / 3){
+        compPick = 'rock';
+    }
+    else if(randomNum >= 1 / 3 && randomNum < 2 / 3){
+        compPick = 'paper';
+    }
+    else{
+        compPick = 'scissors';
+    }
+
+    if(compPick == 'scissors'){
+        result = 'You Lose!'
+    }
+    else if(compPick == 'rock'){
+        result = 'You Win!'
+    }
+    else {
+        result = 'Tie!'
+    }
+    alert(`You picked paper. Computer picked ${compPick}. ${result}`);">
+        paper
+    </button>
+    <button onclick="
+    randomNum = Math.random();
+    
+    if(randomNum >= 0 && randomNum < 1 / 3){
+        compPick = 'rock';
+    }
+    else if(randomNum >= 1 / 3 && randomNum < 2 / 3){
+        compPick = 'paper';
+    }
+    else{
+        compPick = 'scissors';
+    }
+
+    if(compPick == 'rock'){
+        result = 'You Lose!'
+    }
+    else if(compPick == 'paper'){
+        result = 'You Win!'
+    }
+    else {
+        result = 'Tie!'
+    }
+    alert(`You picked scissors. Computer picked ${compPick}. ${result}`);">
+        scissors
+    </button>
+    <script>
+        let compPick = "", result = "", randomNum = '';
+    </script>
+</body>
+</html>

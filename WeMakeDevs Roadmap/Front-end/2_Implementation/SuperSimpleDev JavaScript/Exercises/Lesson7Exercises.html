@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 7 Exercises</title>
+</head>
+<body>
+    <script>
+        // 7a, 7b, 7c:
+        function greet(name){
+            if(name) console.log(`Hello, ${name}!`);
+            else console.log('Hi there!');
+        }
+        greet('Simon');
+        greet();
+        greet('Sufiyan');
+
+        // 7d, 7e, 7f:
+        function convertToFahrenheit(celsius) {
+            console.log(`${9 / 5 * celsius + 32}F`)
+        }
+        function convertToCelsius(fahrenheit) {
+            console.log(`${5 / 9 * (fahrenheit - 32)}C`);
+        }
+        function convertTemperature(temperature, unit){
+            if(unit == 'C') return convertToCelsius(temperature);
+            else if(unit == 'F') return convertToFahrenheit(temperature);
+            else console.log('Enter valid unit.')
+        }
+        convertToFahrenheit(32);
+        convertToCelsius(148);
+        convertTemperature(167, 'C');
+        convertTemperature(37, 'F');
+        convertTemperature(88, 'A');
+    </script>
+</body>
+</html>

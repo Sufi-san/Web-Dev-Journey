@@ -1,0 +1,209 @@
+body {
+    margin-bottom: 300px;
+}
+
+.flexbox-1a {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+}
+
+.item-1 {
+    width: 100px;
+    background-color: lightpink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-1-child {
+    background-color: black;
+    color: white;
+}
+
+.item-2 {
+    width: 200px;
+    background-color: lightblue;
+}
+
+.item-2-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.message-card {
+    max-width: 570px;
+    transition: opacity 0.15s, background-color 0.15s;
+}
+
+.message-card:hover {
+    background-color: rgba(240, 240, 240, 0.7);
+    opacity: 0.7;
+}
+
+.head-text {
+    font-family: Arial;
+    color: rgb(120, 120, 120);
+    font-size: 16px;
+    padding-left: 16px;
+    padding-top: 18px;
+    padding-bottom: 5px;
+    margin-bottom: 8px;
+}
+
+.message-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.img-section {
+    width: 72px;
+    height: 96px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.profile-img {
+    width: 90%;
+    height: 68%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 45px;
+}
+
+.msg-section {
+    margin-left: 8px;
+    flex: 1;
+}
+
+.title-time-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-time-flex, .subject-div, .msg-peek-div {
+    margin-bottom: 6px;
+}
+
+.title-section {
+    font-size: 22px;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.time-section {
+    font-size: 18px;
+    font-family: Arial;
+    margin-right: 20px;
+    color: rgb(120, 120, 120);
+}
+
+.subject-div {
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.msg-peek-div {
+    font-size: 20px;
+    font-family: Arial;
+    color: rgb(120, 120, 120);
+}
+
+.main-flexbox {
+    display: flex;
+    flex-direction: row;
+    height: 270px;
+    max-width: 570px;
+}
+
+.img-section2 {
+    width: 86px;
+    height: 40%;
+    padding-left: 16px;
+    padding-top: 6px;
+}
+
+.profile-img2 {
+    width: 90%;
+    height: 70%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 45px;
+}
+
+.text-flexbox {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 3px;
+    padding-top: 15px;
+}
+
+.name-text, .desc-text, .website-name, .short-desc-text {
+    font-size: 20px;
+    font-family: Arial;
+}
+
+.name-text { 
+    flex: 1;
+    font-weight: bold;
+    padding-left: 3px;
+    margin-bottom: 7px;
+}
+
+.id-text {
+    flex: 2;
+    font-weight: normal;
+    color: rgb(130, 130, 130);
+}
+
+.desc-text {
+    padding-left: 3px;
+    margin-bottom: 4px;
+    line-height: 28px;
+}
+
+.link-box {
+    flex: 5;
+    padding-top: 15px;
+    padding-bottom: 18px;
+    padding-right: 15px;
+}
+
+.last-flexbox {
+    display: flex;
+    background-color: rgb(220, 220, 220);
+    border-radius: 25px;
+    justify-content: right;
+    cursor: pointer;
+}
+
+.left-section {
+    width: 125px;
+}
+
+.right-section {
+    flex: 1;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: white;
+    margin: 1px;
+}
+
+.website-name {
+    color: rgb(130, 130, 130);
+    margin-bottom: 6px;
+}
+
+.short-desc-text {
+    line-height: 28px;
+    color: black;
+}

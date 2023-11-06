@@ -1,0 +1,123 @@
+.text-box1 {
+    padding: 2px;
+    display: block;
+    border-radius: 2px;
+    border-width: 1px;
+    border-style: solid;
+    margin-bottom: 4px;
+}
+
+.text-box2 {
+    padding: 2px;
+    display: block;
+    border-radius: 2px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.question-text {
+    display: inline-block;
+    width: 200px;
+    vertical-align: middle;
+}
+
+.logo {
+    margin-left: 126px;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.search-bar2 {
+    border: none;
+    font-family: Arial;
+    font-size: 14px;
+    border-radius: 20px;
+    padding-left: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 500px;
+    box-shadow: 0px 0px 4px rgb(170, 170, 170);
+}
+
+.first-name, .last-name {
+    padding-left: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    border-color: rgb(177, 177, 177);
+    width: 105px;
+    margin-bottom: 10px;
+}
+
+.email {
+    padding-left: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    border-color: rgb(177, 177, 177);
+    display: block;
+    margin-bottom: 10px;
+    width: 230px;
+}
+
+.sign-up-button {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 96px;
+    padding-right: 96px;
+    border-width: 1px;
+    border-style: solid;
+    font-weight: bold;
+    border-color: rgb(19, 118, 211);
+    background-color: rgb(19, 118, 211);
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+.uber-text {
+    font-size: 20px;
+    font-family: Arial;
+    margin-bottom: 18px;
+}
+
+.location-box, .destination-box {
+    font-size: 10px;
+    padding-left: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 295px;
+    margin-bottom: 4px;
+    color: gray;
+    background-color: rgb(240, 240, 240);
+    border: none; 
+    display: block;
+}
+
+.uber-button {
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    cursor: pointer;
+}
+
+.later-button {
+    border: none;
+    margin-left: 14px;
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    cursor: pointer;
+}

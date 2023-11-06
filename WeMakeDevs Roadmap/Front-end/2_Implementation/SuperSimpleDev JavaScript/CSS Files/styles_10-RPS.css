@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(25, 25, 25);
+    color: white;
+    font-family: Arial;
+}
+
+button {
+    cursor: pointer;
+}
+
+.game-title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.game-button img, .game-button-img {
+    height: 50px;
+}
+
+.game-result {
+    margin-top: 53px;
+}
+
+.game-button {
+    border: 3px solid white;
+    background-color: inherit;
+    padding: 30px 32px;
+    border-radius: 66px;
+    margin-right: 10px;
+}
+
+.scoreboard-txt {
+    margin-top: 60px;
+}
+
+.reset-btn, .yes-no-btn {
+    padding: 8px 15px;
+    font-size: 15px;
+    border: none;
+}
+
+.yes-no-btn {
+    margin-left: 5px;
+}

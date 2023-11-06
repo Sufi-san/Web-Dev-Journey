@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booleans</title>
+</head>
+<body>
+    <script>
+        /*
+        console.log(3 < 5);
+        // JavaScript's conversion behavior allows comparison between Strings and Numbers
+        console.log(5 == '5.00');
+        // This however, can cause issues in some cases
+        // Thus to resolve this we use '==='
+        console.log(5 === '5');
+        // If the operands aren't of the same type, '===' will return false irrespective of actual values
+        // This also appliex for '!=' where we use '!==' instead
+        console.log(5 != '5.00'); // returns false
+        console.log(5 !== '5.00') // returns true
+
+        // Comparison operators have lower priority than math operators
+
+        // Conditional statements:
+        if (false){
+            console.log('Hello');
+        }
+        else {
+            console.log('else');
+        }
+
+        // Brackets are optional for one-line code
+        if(30 >= 16) console.log('You can drive');
+        else console.log('You can not drive')
+
+        let age = 15;
+        if(age >= 16){
+            console.log('You can drive');
+            console.log('Congrats');
+        }
+        else if(age >= 14){
+            console.log('Almost there');
+        }
+        else {
+            console.log('You cannot drive');
+        }*/
+
+        // Logical Operators have lower priority than Comparison Operators
+
+        // Truthy & Falsy Values:
+        /*
+        const cartQuantity = 5;
+        if (cartQuantity){ // Will not run if cartQuantity = 0
+            console.log('Cart is not empty');
+        }
+        else{   // Will run if cartQuantity = 0
+            console.log('Cart Empty');
+        }
+        // Falsy Values in JS: false, 0, '', NaN, null, undefined
+        // All other values are Truthy
+
+        // We get 'NaN' for invalid math operations
+        console.log('a' / 5);
+
+        // We get undefined for variables that have no value yet.
+        let noVal; // const variables need to be assigned when declared 
+        const noVal1 = undefined // a method to make const variables undefined
+        console.log(noVal);
+        */
+
+        // Ternary Operators: (These reduce lines of code for small operations)(Shortcuts for 'if' statements)
+        // Short-hand if-else:
+        const result = true ? 'truthy': 'falsy';
+        console.log(result);
+        // Guard operator (&&): Do not run the code on the right if false
+        false && console.log('Hello');
+        let condition = 5; // truthy value
+        const message = condition && 'Message has been passed';
+        console.log(message);
+        // Default operator (||): Do not run the code on the right if true
+        const chosenCurrency = 'EUR';
+        const currency = chosenCurrency || 'USD'; // Here USD is default value if no currency is chosen;
+        console.log(currency);
+    </script>
+</body>
+</html>

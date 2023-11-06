@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List Project</title>
+    <link rel="stylesheet" href="../CSS Files/styles_11-ToDo.css">
+</head>
+
+<body>
+    <div class="div1">
+        <p>Todo List Practice 1</p>
+        <input class="js-input1" type="text" placeholder="Todo name" onkeydown="takeInputOnEnter(event, 1);">
+        <button onclick="addInList();">Add</button>
+    </div>
+    <div class="div2">
+        <p>Todo List Practice 2</p>
+        <input class="js-input2" type="text" placeholder="Todo name" onkeydown="takeInputOnEnter(event, 0);">
+        <button onclick="addInList2();">Add</button>
+        <div class="js-todo-display"></div>
+    </div>
+    <div>
+        <p>Todo List</p>
+        <div class="main-display">
+            <input class="js-input3a name-field" placeholder="Todo name">
+            <input class="js-input3b date-field" type="date">
+            <button class="add-btn" onclick="addInToDoList()">Add</button>
+        </div>
+        <div class="js-todo-display2 list-display"></div>
+    </div>
+    <script src="../JS Files/11-ToDo_Project.js"></script>
+</body>
+
+</html>

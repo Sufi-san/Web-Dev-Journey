@@ -1,0 +1,149 @@
+p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.red-square {
+    height: 80px;
+    width: 80px;
+    background-color: red;
+}
+
+.green-circle {
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+    background-color: green;
+}
+
+.satisfy-prompt {
+    width: 300px;
+    padding-left: 14px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-family: Arial;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(172, 172, 172);
+    border-radius: 2px;
+}
+
+.satisfy-text {
+    margin-bottom: 16px;
+}
+
+.yt-music-div {
+    font-family: Arial;
+    color: rgb(172, 172, 172);
+    background-color: black;
+    width: 300px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 2px;
+    font-size: 13px;
+}
+
+.yt-text {
+    color: white;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 14px;
+}
+
+.tweet-design {
+    font-size: 14px;
+    font-family: Arial;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: rgb(62, 62, 62);
+    vertical-align:top;
+    box-shadow: 0px 0px 5px rgb(120, 120, 120);
+    padding: 10px; 
+    width: 390px;
+    border-radius: 4px;
+}
+
+.cat-image4 {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    vertical-align: middle;
+}
+
+.img-text {
+    margin-left: 8px;
+    margin-right: 138px;
+    display: inline-block;
+}
+
+.tweet-button {
+    background-color: rgb(29, 155, 240);
+    border-color: rgb(29, 155, 240);
+    border-style: solid;
+    font-weight: bold;
+    border-radius: 18px;
+    padding-left: 14px;
+    padding-top: 6px;
+    padding-right: 14px;
+    padding-bottom: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+.profile-div {
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 5px rgb(120, 120, 120);
+    font-family: Arial;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+    width: 180px;
+}
+
+.div-image {
+    object-fit: cover;
+    object-position: center;
+    width: 181px;
+    height: 180px;
+    cursor: pointer;
+}
+
+.mutual-friends, .friend-button{
+    margin-left: 6px;
+}
+
+.name-text {
+    margin-top: 6px;
+    margin-left: 6px;
+    margin-bottom: 4px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.mutual-friends {
+    margin-bottom: 10px;
+    color: gray;
+    font-size: 14px;
+}
+
+.friend-button {
+    background-color: rgb(46, 91, 189);
+    border-radius: 3px;
+    padding-left: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 18px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}

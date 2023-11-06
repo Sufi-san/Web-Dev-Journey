@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 9 Exercises</title>
+</head>
+<body>
+    <!-- 9a: -->
+    <button>9a</button><hr>
+    <!-- 9b: -->
+    <button class="js-9b-btn">9b</button><hr>
+    <!-- 9c: -->
+    <button onclick="showChoice('heads');">heads</button>
+    <button onclick="showChoice('tails');">tails</button>
+    <p class="js-choice"></p><hr>
+    <!-- 9d, 9e, 9f: -->
+    <input type="text" class="js-nameInput" onkeydown="showNameOnEnter(event);">
+    <button onclick="showName();">Submit</button>
+    <p class="js-showName"></p><hr>
+    <!-- 9g: -->
+    <input type="text" class="js-costField" onkeydown="showCostOnEnter(event);">
+    <button onclick="showCost();">Calculate</button>
+    <p class="js-costText"></p><hr>
+    <!-- 9h: -->
+    <input type="text" class="js-textField" onkeyup = "showText()">
+    <p class="js-showText"></p><hr>
+    <!-- 9i: Solved in Lesson9Exercise9i.html-->
+    <!-- 9j: Solved in Lesson9Exercise9j.html-->
+    <script>
+        console.log(document.querySelector('button').innerHTML);
+        document.querySelector('.js-9b-btn').innerText = '9b done!';
+        function showChoice(choice) {
+            document.querySelector('.js-choice').innerHTML = `You chose: ${choice}`;
+        }
+        function showName() {
+            const text = document.querySelector('.js-nameInput').value;
+            document.querySelector('.js-showName').innerHTML = `Your name is: ${text}`;
+        }
+        function showNameOnEnter(event) {
+            if(event.key === 'Enter') showName();
+        }
+        function showCost() {
+            // Found the reason for buggy long float prints for some inputs
+            // It is due to complications of storing decimals using IEEE754 format in JS
+            // For better accuracy there are frameworks like BigDecimal.js
+            // Here, we can just multiply both figures by power of 10 based on string length before adding
+            // After that, when we divide by the same power of 10 we get the required result
+            let cost = Number(document.querySelector('.js-costField').value);
+            if(cost) { // Meaning if cost is not NaN then run the following...
+                const powerOf10 = Math.pow(10, String(cost).length);
+                console.log(cost);
+                if(cost < 40){
+                    cost = (cost * powerOf10 + 10 * powerOf10) / powerOf10;
+                }
+            }
+            document.querySelector('.js-costText').innerHTML = `$${cost}`;
+        }
+        function showCostOnEnter(event) {
+            if(event.key === 'Enter') showCost();
+        }
+        // learned a new event listener 'onkeyup' (when key is pressed and released)
+        function showText() {
+            const text = document.querySelector('.js-textField').value;
+            document.querySelector('.js-showText').innerHTML = `${text}`;
+        }
+    </script>
+</body>
+</html>
