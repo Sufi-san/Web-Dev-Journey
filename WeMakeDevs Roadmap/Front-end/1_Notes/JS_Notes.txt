@@ -1,0 +1,5 @@
+
+	Notes for JS can be found here: Sufi Folder/Programming Languages (GH)/Programming Tutorials/Javascript/30-Days-Of-JavaScript/Short Notes
+	
+	- The parent folder of 'Short Notes' i.e. '30-Days-Of-JavaScript' will also contain relevant code files.
+	
