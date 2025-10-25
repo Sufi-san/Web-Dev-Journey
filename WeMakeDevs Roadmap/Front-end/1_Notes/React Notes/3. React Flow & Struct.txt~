@@ -1,0 +1,60 @@
+In any React Project, there is always an entry point HTML file, mostly named 'index.html'.
+For any JS code to execute, it needs to be injected or linked to the HTML file.
+
+In the HTML file, inside the body, there exists a div with any id (mostly 'root' in React). This div is where all our HTML will be injected.
+
+The linked JS file first selects this predefined 'div' using its id and injects all the generated HTML for our project which then gets displayed on the actual webpage.
+
+This is a reason why pure React applications are also called SPA (Single Page Applications) as all activities, page changes, element changes, rendering... etc happen in a single HTML file.
+
+# What actually happens inside the JS file (index.js or main.jsx)?
+    Docs: https://react.dev/reference/react-dom/client/createRoot
+    1) ReactDOM: 
+        For the purpose of optimizing re-rendering on websites/applications, many JavaScript frameworks provide various approaches. However, React's approach is the idea of the virtual DOM.
+        React's virtual DOM implies a "virtual" representation (as a tree, as each element is a node that holds an object) of a user interface, which is preserved in memory and synchronized with the browser's DOM via React's ReactDOM library.
+
+    2) createRoot():
+        The createRoot() method is provided by ReactDOM and it is used to initialize the root node of the Virtual DOM tree. It takes a container element (our 'div' in the HTML file) as an argument and returns a ReactDOM root object.
+
+    3)  render():
+        The render() method is used by the root object returned by createRoot(). It accepts a single Component (JSX Div) that encloses all of the generated JSX code or sub components and makes updates on the webpage inside the selected 'root' div from 'index.html'.
+
+    4) <React.StrictMode><React.StrictMode>:
+        Used as the default return component that encloses all other components. This component helps developers catch potential problems in their code. We can replace it with a simple div '<div></div>', a single component '<App />' or with '<></>' (React Fragment) as well. What it does is that, it 'mounts' all children components twice in development mode. (Mount 
+
+
+# Creating, Importing & Exporting components, JS vs JSX, Naming Conventions and Best Practices to follow:
+
+    Components can be created in JS or JSX files. They are basically javascript functions that return HTML or JSX (Java Script XML). After creation, these functions are exported using the 'export' keyword.
+
+    To include the components in another JS or JSX file, we first import them and then use them by their names as proper HTML tags. 
+    E.g: 
+    - Component file:
+        function App() {
+            return (
+                <>
+                    <h1>Hello World</h1>
+                    <p>My App Component</p>
+                </>
+            )
+        }
+        export default App;
+    - In Main JS file:
+        import App from './App.js'
+        ...
+        // It can be now be used for rendering as:
+        // <App />
+
+    In a pure React project, the extension for the component files can be either '.js' or '.jsx'.
+    However, in a Vite-React project, the extension for component files strictly needs to be '.jsx'.
+    Note:
+        Normal javascript code files that won't be used as components can always have the '.js' extension. (like files exporting hooks)
+    
+    Be it a pure React project or a Vite-React project, the components, that are to be used as markup tags, should always have a capital initial letter.
+    E.g: <app /> - is not valid, <App /> - is valid.
+
+    Irrespective of the build type of React project, these naming Conventions and Best Practices are to be followed:
+    - Component File names and the name of the functional components inside them should always start with a Capital letter. (This helps the browser in differentiating between standard html tags and React components)
+    - Always give the '.jsx' extension to your component files.
+
+

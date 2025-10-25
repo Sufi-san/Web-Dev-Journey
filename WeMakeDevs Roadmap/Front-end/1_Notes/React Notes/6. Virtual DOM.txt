@@ -1,0 +1,38 @@
+# Virtual DOM: https://refine.dev/blog/react-virtual-dom/#introduction
+    - React creates its own version of a Document Object Model which is nothing but a collection of nodes (React Nodes or React Elements) linked in a tree structure. This is also called as 'Virtual DOM' and it is preserved in memory.
+    - The React Virtual DOM can be thought of as a lightweight copy of the actual DOM. Whenever the state or props change, before making updates to the real DOM, React first updates the Virtual DOM, calculating the differences between the previous and current states—a process called diffing.
+
+# BrowserDOM vs VirtualDOM:
+    - Representation: (Actual structure of the web page) | (Lightweight, in-memory representation of the DOM)
+    - Manipulation: (Can directly manipulate elements on the screen) | (Unable to directly manipulate the elements displayed on the screen)
+    - Updates: (Direct changes to BrowserDOM, can trigger costly repaints and recalculations) | (Performs minimum possible changes by diffing & reconciliation and batches updates per render ... changes aren't applied immediately or synchronously)
+    - Performance: (Updates are slow and resource-intensive) | (Updates are comparatively fast and efficient)
+    
+# The .createRoot(), .render() methods and page reloading:
+    - The createRoot() is responsible for initiating the creation of a Virtual DOM and is also responsible for updating the Browser DOM as required by returning a Virtual DOM root that provides the .render() method.
+    - The updates will be such that only those components that are changed in the Virtual DOM will be updated. This is done by comparing the new updated Virtual DOM to its previous version saved in memory(diffing).
+    - React then reconciles the Virtual DOM with the actual DOM (the one rendered in the browser).
+    This process involves identifying the minimal set of changes needed to update the actual DOM to match the updated Virtual DOM.
+    - React applies these changes directly to the actual DOM, often WITHOUT requiring a full page reload and WITHOUT reconstructing the entire Browser DOM.
+    * Note: 
+    	Updates to Browser DOM made using methods like querySelector() also do NOT trigger full page reloads or full DOM reconstruction. However, these updates are inefficient because they are made immediately and trigger excessive reflows(layout recalculation) and repaints(visual changes like color, size or position change) in the Browser. On the other hand, React ensures changes are made in batches per render.
+
+# UI Updation & Reconciliation: 
+    - Reconciliation is the action of making one view or belief compatible with another
+    - When elements are added to a user interface, the Virtual DOM is constructed. If the state of any of these elements changes, a new Virtual DOM tree is produced.
+    - To analyze how an updated node of the Virtual DOM differs from its previous self in the old version of Virtual DOM, the 'diffing' algorithm is used.
+    - The diffing algorithm is an O(n) heuristic algorithm predicated on two suppositions:
+        a) Different trees will result from two different types of elements.
+        b) Using a key prop, we can indicate which child items might remain consistent between renders. (more about this in 'React Docs Notes')
+    - More about diffing algo: https://refine.dev/blog/react-virtual-dom/#the-role-of-the-virtual-dom-in-reacts-reconciliation
+
+# Why prefer non-instantaneous updates for UI? (especially when dependent on network):
+    - When any component is dependent on network requests or any other type of rapid (happening in matter of milli-seconds or seconds) and time-consuming (takes time to apply the change) updates, it is better to not update the UI component instantly.
+    - Instead, we can wait for the final update in a specific time interval and apply changes only from the final updated state.
+
+# React Fiber (Must Read Docs): https://github.com/acdlite/react-fiber-architecture
+    - Even though the Virtual DOM still exists, the core algorithm for UI updation is now React Fiber.
+    - Fiber provides a more efficient and flexible framework/architecture for executing the diffing algorithm.
+    - Fiber makes use of time-slicing to allow React to split the reconciliation work into smaller chunks, making it possible to pause, resume, or even prioritize updates. This is crucial for maintaining responsiveness during complex UI updates. (prioritizing complex visual or fast animation updates while still supporting time-intensive updates at their own pace)
+    
+

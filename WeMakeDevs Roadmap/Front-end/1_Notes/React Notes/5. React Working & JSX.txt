@@ -1,0 +1,26 @@
+# Internal working of React and how React interprets Components:
+    - JSX code gets parsed to a React element.
+    - A 'ReactElement' is simply a representation of a DOM element in the Virtual DOM.
+    - React interprets (parses) components internally as React Elements (custom ReactNode objects) with properties like type, props and children
+    - This interpreted version serves as the basis for creating DOM elements and constructing the DOM tree.
+
+# Transpiler & JSX:
+    - By default, there is no feature of the Browser to understand JSX returned by functions, it can only interpret JS objects for rendering.
+    - However, due to better readability and writability of HTML over plain JS, we are provided the JSX syntax which we can return from functions to form components
+    - When the development server starts, a Transpiler(transform one form of code into another) is responsible for interpreting and replacing the written JSX syntax as plain Javascript code (ReactNode objects) understandable by the browser.
+    - This parsing is made possible by react/jsx-runtime and react/jsx-dev-runtime (development mode) present in the React library.
+* Note: 
+    - The JSX transformation in a Vite project is handled by 'Esbuild' which is faster and more optimized.
+    - 'Babel' was used by the plain 'create-react-app' build tool
+
+# Creating a React Element using React.createElement():
+    - Since we cannot pass just any object to React's 'render()' method, we can create an accurate object type (ReactNode) using the React.createElement() method.
+    - We can then pass this as a component by setting the ReactNode object as the return value of a function or we can pass it as a sole object and it will be rendered and displayed on the webpage
+
+# The 'JS' in JSX, Evaluated Expressions and why no JS logical expressions:
+    Article: https://coreui.io/blog/how-to-fix-objects-are-not-valid-as-a-react-child/#introduction-to-the-error (Must read)
+    - The 'X' in JSX stands for XML and it explains the markup language structure of JSX syntax.
+    - The 'JS' is explained by the allowed inclusion of 'Evaluated Expressions or Return values' (typically data that can be stored inside a variable) of JS which can be included into the JSX code using '{}' curly braces.
+    - We can NOT write logical expressions or statements (if-else, loops and assignments) inside these braces because at the end, the ReactNode object expects an 'Evaluated Expression' and not plain JS code. 
+    - Also, even though functions and objects can be passed as props(for attributes) in the opening tag, we cannot directly use them between the opening and closing tags.
+

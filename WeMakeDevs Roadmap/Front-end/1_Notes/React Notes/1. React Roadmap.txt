@@ -1,0 +1,34 @@
+React Docs: https://react.dev/
+
+Why Learn React?
+    - makes it easy to manage & build complex front-end (simple front-end can also be made using react but it would be less efficient)
+    - most projects don't need react in initial phase but might require it later on when complexity increases
+
+Why React was created? (Phantom Message Problem - Old Facebook notif)
+    - To improve interactivity between state (internal details in js or variables) and the User Interface
+    - This interactivity problem was solved eventually after a few updates in the React Library.
+
+Two approaches to get familiar with the React Library:
+    1) Learn by building projects (approach I will follow)
+    2) Learn every topic theoretically in-depth (Babel, Fibre, Virtual DOM, diffing algo, hydration, tree-shaking)
+
+Framework vs Library: (Military vs Cool Dude)
+    - Framework has stricter regulations about conventions, methodology and practices that make the project fit for production standards.
+    - Library provides greater freedom in comparison to frameworks. 
+    - Both Framework and Library provides various useful utilities, making software development easier.
+    - React is a Library.
+
+Topics to learn in React:
+    - Core (State OR UI Manipulation, jsx)
+    - Component Reusability (props)
+    - Propagating changes (hooks)
+
+Addons: (Functionality that is crucial for development but is not a full-fledged aspect of React)
+    - Router (React-router-dom library)
+    - State Management (Redux, Redux toolkit, zustand, context API)
+    - BAAS Apps (Backend as a service, Appwrite, Firebase, Superbase) -> To create Social Media clones, e-commerce apps...
+
+After React:
+    - React is not a complete solution (no SEO, no routing, browser has to render jsx to js)
+    - We can start learning proper frameworks based on React like NextJS, Gatsby, Remix
+    - We can directly start learning about backend (Spring Boot, Express & Node, ...)

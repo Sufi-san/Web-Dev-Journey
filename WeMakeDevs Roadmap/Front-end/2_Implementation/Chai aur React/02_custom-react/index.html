@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom React Page</title>
+</head>
+<body>
+    <noscript>JavaScript must be enabled to view this page.</noscript>
+    <div id="root"></div>
+    <script type="module" src="./main.js"></script>
+    <!-- 
+        Why is there a 'type="module"' attribute in the script tag?
+
+        The type="module" attribute inside the <script> tag is a modern feature that tells the browser to treat the linked JavaScript file (./main.js) as an ECMAScript module (ES module). (The counter part being CommonJS modules)
+
+        This is a fundamental shift from traditional JavaScript scripts and is essential for building structured, modular web applications like those made with React. 
+
+        The most important reason is that type="module" allows you to use the standard import and export statements within your JavaScript files.
+    -->
+</body>
+</html>

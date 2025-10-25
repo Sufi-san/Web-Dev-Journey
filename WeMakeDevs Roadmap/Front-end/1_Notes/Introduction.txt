@@ -7,7 +7,7 @@ List of Contents:
 	6. Other Skills
 
 What does a Front-end Developer do? 
--> Design the UI/UX of a web application ensuring that it is efficient, user-friendly and aesthetically pleasing. (Front-End Web Developer)
+-> Develop (Usually Programming) the UI/UX of a web application ensuring that it is efficient, user-friendly and aesthetically pleasing. (Front-End Web Developer)
    The term can also be used to describe a person who develops interactive GUI for mobile & desktop interfaces.
    
 What is Front-end Development?
@@ -15,9 +15,9 @@ What is Front-end Development?
 
 Technologies/Tools/Languages used by Front-end Web Developers:
 -> 1. HTML (Declare the Structure & Layout)
-   2. CSS (Design and format structure,text ,images, layout and other web elements)
+   2. CSS (Design and format structure, text , images, layout and other web elements)
    3. JavaScript (A programming language to add functionality to the website)
-   4. Frameworks (React, Angular, Vue.js to simplify the Front-end Dev process)
+   4. Frameworks & Libraries (React, Angular, Vue.js to simplify the Front-end Dev process)
    
 Using HTML, CSS & JavaScript a developer can develop web applications for various run-time environments which include:
 -> 1. Web Browser (most common software for working with information on WWW) (e.g: Chrome, Firefox, Safari, Microsoft Edge)
@@ -30,7 +30,7 @@ Using HTML, CSS & JavaScript a developer can develop web applications for variou
       (e.g: React Native, Flutter)
    
 Goals to keep in mind during Development:
--> 1. Accessibility (make the website using responsive web desing such that it is easily accessible on different devices Laptops, Tablets, Smartphones)
+-> 1. Accessibility (make the website using responsive web design such that it is easily accessible on different devices Laptops, Tablets, Smartphones)
    2. Performance (manipulating HTML, CSS, JavaScript to improve user-interaction and operation speeds)
    3. Speedy Development (make use of techniques to shorten the development duration and provide quick & accurate results)
    
