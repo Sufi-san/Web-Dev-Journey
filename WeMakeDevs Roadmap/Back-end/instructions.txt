@@ -1,0 +1,3 @@
+The backend projects will have their own isolated folders with dedicated version control using Git.
+This will also enable easier deployment if/when required. 
+As of this moment, they reside in 'Sufi Folder'/'Backend Repos'
